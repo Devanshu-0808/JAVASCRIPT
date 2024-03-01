@@ -11,4 +11,5 @@ const aid= Symbol('123')
 console.log(aid==id)
 
 const bigNumber = 343453556543n
+console.log(typeof bigNumber)
 
