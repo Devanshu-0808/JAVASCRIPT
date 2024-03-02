@@ -65,5 +65,5 @@ console.log(Object.values(tinderUser))
 console.log(Object.entries(tinderUser))
 
 //when we loop through object we get one value if that value is not exist then there is chances of crash so we use 
- 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn'))//Boolean
