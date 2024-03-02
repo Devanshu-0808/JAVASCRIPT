@@ -52,11 +52,11 @@ Jsuser.greeting =function(){
 
 console.log(Jsuser.greeting)//function excecute nhi hua hai sirf function ka reference aya hai
 console.log(Jsuser.greeting())
-
+console.log(Jsuser)
 //if we want to use string interpolation as value 
 
 Jsuser.greetingTwo=function(){
-    console.log('Hello js  user , ${this.name}')//if we want to reference same object then we use  this
+    console.log(`Hello js  user , ${this.name}`)//if we want to reference same object then we use  this
 }
 console.log(Jsuser.greetingTwo())
-console.log(Jsuser.greetingTwo)
+console.log(Jsuser.greeting)
