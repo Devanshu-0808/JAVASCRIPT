@@ -35,3 +35,5 @@ console.log(Array.of(score1 , score2 , score3))
 //sorting and reversing
 console.log(real_arr.sort())
 console.log(real_arr.reverse())
+
+console.log()
