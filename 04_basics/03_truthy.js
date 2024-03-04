@@ -41,6 +41,9 @@ console.log(val2)
 val3=null??undefined
 console.log(val3)
 
+val3=9??undefined
+console.log(val3)
+
 val3=null??null
 console.log(val3)
 
