@@ -10,8 +10,7 @@
 !==
 */
 
-//conditional statement
-
+//conditional statement    --> real life usage rating in apps
 //1st-> if else
 
 const isuserLoggedIn=true
@@ -57,5 +56,8 @@ const debitcard=true
 if(userLoggedIn && debitcard){
     console.log("Allow to buy course")
 }
+
+//logical operator
 //&& ->and operator
 //|| ->or operator
+
