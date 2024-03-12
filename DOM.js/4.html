@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devanshu</title>
+</head>
+<body style="background-color: black; color: aqua;">
+   <ul class="language">
+    <li>javascript</li>
+   </ul> 
+</body>
+<script>
+     function addlanguage(langname){
+        const li=document.createElement("li")//list item
+        li.innerHTML =langname
+        
+         document.querySelector(".language").appendChild(li)
+     }
+     addlanguage("python")
+     addlanguage("C++")
+
+    //  when we use innerHTML we basically traverse tree multiple time
+
+    //or
+
+       //optimized approach were we create textNode and then append
+        //No Traversal     
+       function addoptilanguage(langname){
+        const li=document.createElement("li")
+        li.appendChild(document.createTextNode(langname))   
+        document.querySelector(".language").appendChild(li)   
+    }
+   addoptilanguage("golang")
+   addoptilanguage("matlab")
+     
+
+     // edit 
+
+     const secondLang=document.querySelector("li:nth-child(2)")
+     const newli=document.createElement("li")
+     newli.textContent="MOJO"
+     //we can use appendchild but it will add MOJO after python int tree
+     secondLang.replaceWith(newli)  // work like appendchild
+      
+    //edit
+    const firstja=document.querySelector("li:nth-child(1)")
+    const newlii=document.createElement("li")
+    newlii.innerText="typecrript"
+    firstja.replaceWith(newlii)
+
+    //remove
+    const laslanguage=document.querySelector("li:last-child")
+    laslanguage.remove() //matlab removed
+
+</script>
+</html>
