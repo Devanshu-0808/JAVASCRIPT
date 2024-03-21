@@ -87,3 +87,19 @@ form.addEventListener('submit', function (e) {
 });
 
 ````
+
+## project 3
+
+```Js
+
+const clock = document.querySelector('#clock');
+
+//for continueous changing time use setInterval
+// synrtax setInterval(function(){} , 1000)
+//1000 is time in millisecond for every one sec;
+setInterval(function () {
+  let date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+
+```
