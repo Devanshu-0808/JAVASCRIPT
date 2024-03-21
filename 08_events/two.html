@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="Stop">Stop</button>
+</body>
+<script>
+    setTimeout(function(){
+        console.log("devanshu")
+    } , 2000)
+
+   const h1= document.querySelector("h1")
+   const changeme=setTimeout(function(){
+    h1.innerHTML=B="Best javascript series"
+   } , 2000)
+   
+   document.querySelector("#Stop").addEventListener("click" , function(){
+    clearTimeout(changeme)
+   })  
+</script>
+</html>
