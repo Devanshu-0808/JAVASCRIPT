@@ -11,7 +11,7 @@ const user ={
 }
 // this keyword tell current context
 console.log(user.username)
-console.log(user.getUserDetails())
+user.getUserDetails()
 console.log(this)//global context will be {}
 //but if you check in browser (browser has multiple api , DOM , Browser request are present) do we get global object name "Window"
 
@@ -65,3 +65,12 @@ console.log(nuserOne1)
 console.log(userOne1.constructor)
 
 // look instanceof property
+
+
+
+
+
+//js default behaviour is prototypal behaviour
+// arrow functions me "this" use nhi kar shakte beacause of protype
+//due to prototype behaviour me get access of "this" , classes , inheritance
+// prototypal behaviour means har nhi manna
