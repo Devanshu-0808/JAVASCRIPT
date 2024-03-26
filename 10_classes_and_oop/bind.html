@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <button>Button clicked</button>
+</body>
+<script>
+    //jaise he page load ho ek Object create ho jaye React ka
+    class React {
+        constructor(){
+            this.library= "React"
+            this.server ="https://localhpst:300"
+
+            //requirement
+            //button ka reference mill jaye button ka
+            //click karne ke baad kugh ho jaye
+           document.querySelector('button')
+        // .addEventListener("click" , this.handleClick)//now here this will go in button
+           //we wont be able to access this.server  we must have to bind it
+         .addEventListener("click" , this.handleClick.bind(this))
+                                 //button                  //class       
+        }
+        handleClick(){
+            console.log("button clicked")
+            console.log(this.server)
+        }
+    }
+    const app =new React()
+</script>
+</html>
