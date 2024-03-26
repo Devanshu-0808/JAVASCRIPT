@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id ="orange">orange</button>
+    <button id ="green">green</button>
+</body>
+<script>
+// function makeFunc() {
+//   const name = "Mozilla";
+//   function displayName() {
+//     console.log(name);
+//   }
+//   return displayName;
+// }
+
+// const myFunc = makeFunc();//whole lexical scope is received
+// myFunc();
+
+
+// reallive
+// document.getElementById("orange").onclick =function(){
+//     document.body.style.backgroundColor="orange";
+// }
+// document.getElementById("green").onclick =function(){
+//     document.body.style.backgroundColor="green";
+// }
+//......but what  about 50 buttons hecktick
+ function clickHandler(color){
+    
+    // document.body.style.backgroundColor=`${color}`;
+    
+    return function(){
+        //due to lexical scoping we are getting access of to color
+        document.body.style.backgroundColor=`${color}`;
+    }
+
+}
+document.getElementById("orange").onclick =clickHandler("orange")
+document.getElementById("green").onclick =clickHandler("green")
+ //expecting that in return we get function but we are getting just execute the function
+</script>
+</html>
