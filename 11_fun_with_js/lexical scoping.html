@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    
+//Lexical Scoping
+
+
+//     function init() {
+//   var name = "Mozilla"; 
+//   function displayName() {
+   
+//     console.log(name); 
+//   }
+//   displayName();
+// }
+// init();
+function outer(){
+    let username="devanshu"
+    function inner(){
+        console.log("inner",username)//we are getting access here
+    }
+
+    inner()
+}
+outer()
+console.log("outer" ,username)//we are not getting access here
+
+</script>
+</html>
